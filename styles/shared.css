@@ -1,26 +1,23 @@
 body{
     text-align: center;
     background-color: #e3cece;
-    margin: 50px;
+    color: rgb(83, 75, 75);
 }
 
 h1 {
     font-family: 'Jersey 15', sans-serif; 
-    color: rgb(139, 161, 231);
-    font-size: 52px;
 }
 
 p {
-    font-family: sans-serif; 
-    color: #8c6d6d";
+    font-family: 'Jersey 15', sans-serif; 
 }
 
 a {
+    font-family: 'Jersey 15', sans-serif;
     color:#8c6d6d;
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;
-    color:black;
 }
