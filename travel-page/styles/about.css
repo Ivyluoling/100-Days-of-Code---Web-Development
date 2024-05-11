@@ -1,0 +1,52 @@
+body {
+  background: linear-gradient(30deg, rgb(205, 237, 235), rgb(170, 213, 211));
+  color: rgb(68, 68, 68);
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  position: static;
+}
+
+header a {
+  color: rgb(55, 109, 115);
+}
+
+#page-logo a:hover {
+  background-color: rgb(183, 230, 235);
+  color: rgb(59, 59, 59);
+}
+
+header nav a:hover {
+  background-color: rgb(183, 230, 235);
+  color: rgb(59, 59, 59);
+}
+
+main {
+  margin: 48px;
+  padding: 24px;
+}
+
+main h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 50px;
+  font-family: "Oleo Script", sans-serif;
+  margin: 0;
+}
+
+main p {
+  font-size: 25px;
+  font-family: sans-serif;
+  font-weight: lighter;
+  margin: 24px auto;
+  padding: 48px;
+  border-radius: 8px;
+  box-shadow: 2px 4px 8px rgb(68, 67, 67);
+}
+
+footer {
+  margin: 0 0 50px 0;
+  background: linear-gradient(45deg, rgb(187, 240, 236), rgb(170, 213, 211));
+}
