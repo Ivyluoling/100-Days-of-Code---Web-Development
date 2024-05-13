@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/contactuspage/styles/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Contact Us</h1>
+    </header>
+    <main>
+      <form action="/contactuspage/" method="post">
+        <section>
+          <h2>How can we help you?</h2>
+          <ul>
+            <li>
+              <label for="username">Your Name</label>
+              <input type="text" name="user-name" id="username" required />
+            </li>
+            <li>
+              <label for="useremail">Your E-mail Address</label>
+              <input type="email" name="user-email" id="useremail" required />
+            </li>
+            <li>
+              <label for="phone">Your Phone Number</label>
+              <input
+                type="tel"
+                name="user-phonenumber"
+                id="phone"
+                minlength="10"
+                required
+              />
+            </li>
+            <li>
+              <label for="usermessage">Your message</label>
+              <textarea
+                name="user-message"
+                id="usermessage"
+                required
+                placeholder="Leave your message here ..."
+                rows="8"
+                minlength="5"
+                maxlength="200"
+              ></textarea>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <label for="channel">How did you find us?</label>
+          <select name="channel" id="channel">
+            <option value="search">Web Search</option>
+            <option value="friend">Friend</option>
+            <option value="facebook">Facebook</option>
+            <option value="companywebsite">Company Website</option>
+            <option value="other">Other</option>
+          </select>
+        </section>
+        <section>
+          <h2>How should we reply?</h2>
+          <ul>
+            <li class="reply-option">
+              <input
+                type="radio"
+                name="reply"
+                id="reply-phone"
+                value="phone"
+                required
+              />
+              <label for="reply-phone">Call me</label>
+            </li>
+            <li class="reply-option">
+              <input
+                type="radio"
+                name="reply"
+                id="reply-email"
+                value="email"
+                required
+              />
+              <label for="reply-email">Send me an email</label>
+            </li>
+            <li class="reply-option">
+              <input
+                type="radio"
+                name="reply"
+                id="noreply"
+                value="noreply"
+                required
+              />
+              <label for="noreply">Don't reply</label>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <div class="terms">
+            <input type="checkbox" id="accept-terms" name="terms" />
+            <label for="accept-terms">Accept Terms</label>
+          </div>
+        </section>
+        <section id="form-actions">
+          <button class="reset-button" type="reset">Clear</button>
+          <button class="submit-button" type="submit">Submit</button>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>
